@@ -18,7 +18,7 @@ def division(num1, num2):
         print("Your answer is: " + str(result))
 
 while True:
-    action = input("What operation would you like to perform? [A]ddition, [S]ubraction, [M]uliplication, or [D]ivision: ")
+    action = input("What operation would you like to perform? [A]ddition, [S]ubraction, [M]uliplication, [D]ivision, or [Q]uit Program?: ").upper()
     if action == ("A"):
         num1 = int(input("What's your first number?: "))
         num2 = int(input("What's your second number?: "))
@@ -35,5 +35,7 @@ while True:
         num1 = int(input("What's your first number?: "))
         num2 = int(input("What's your second number?: "))
         division(num1, num2)
+    elif action == "Q":
+        break
     else:
         print("Invalid input")

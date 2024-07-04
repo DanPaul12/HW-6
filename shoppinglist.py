@@ -9,7 +9,7 @@ while True:
         bad_item = input("What item would you like to remove: ")
         shopping_list.remove(bad_item)
     elif action == 'D':
-        print(shopping_list)
+        print("Your shopping list includes: \n" + str(shopping_list))
     elif action == 'Q':
         break 
     else:
