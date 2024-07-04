@@ -4,15 +4,18 @@ def addition(num1, num2):
 
 def subtraction(num1, num2):
     result = num1 - num2
-    print(result)
+    print("Your answer is: " + str(result))
 
 def multiplication(num1, num2):
     result = num1 * num2
-    print(result)
+    print("Your answer is: " + str(result))
 
 def division(num1, num2):
-    result = num1 / num2
-    print("Divide by zero error") if num2 == 0 else print(result)
+    if num2 == 0:
+        print("Can't divide by zero")
+    else:
+        result = num1 / num2
+        print("Your answer is: " + str(result))
 
 while True:
     action = input("What operation would you like to perform? [A]ddition, [S]ubraction, [M]uliplication, or [D]ivision: ")
